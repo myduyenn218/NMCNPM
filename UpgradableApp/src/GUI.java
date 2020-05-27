@@ -19,7 +19,7 @@ setLayout(new BorderLayout());
 
 		JTextField b = new JTextField(5);
 
-		JLabel operator = new JLabel("+");
+		JLabel operator = new JLabel("x");
 		JLabel equal = new JLabel("=");
 		JTextField result = new JTextField(5);
 		JButton cal = new JButton("Calc");
@@ -40,7 +40,7 @@ setLayout(new BorderLayout());
 				try {
 					int a = Integer.parseInt(aText);
 					int b = Integer.parseInt(bText);
-					int res = a + b;
+					int res = a * b;
 					result.setText(res + "");
 				} catch (NumberFormatException exception) {
 					
